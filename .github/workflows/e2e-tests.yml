@@ -24,7 +24,7 @@ jobs:
         with:
           stale-issue-message: 'This issue is stale'
           stale-pr-message: 'This PR is stale'
-          labels-to-remove-when-stale: 'test1,test2,test3'
+          labels-to-remove-when-stale: 'test1,test2,test3,test4'
           days-before-stale: 0
       - name: Print outputs
         run: echo ${{ format('{0},{1}', toJSON(steps.stale.outputs.staled-issues-prs), toJSON(steps.stale.outputs.closed-issues-prs)) }}
